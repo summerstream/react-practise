@@ -8,6 +8,7 @@ import {
 import Picker from './components/picker/index'
 import IndexPage from './pages/index/index'
 import pickers from './pages/pickers/index'
+import SearchGeek from './containers/search-geek'
 
 class Routes extends React.Component{
     render(){
@@ -17,7 +18,7 @@ class Routes extends React.Component{
                     <Route exact path="/"  component={IndexPage} />
                     <Route path="/index"  component={IndexPage} />
                     <Route path="/pickers" component={pickers} />
-                
+                    <Route path="/search" component={SearchGeek} />
                 </div>
             </Router>
         );
