@@ -1,0 +1,13 @@
+.fade-in{
+    opacity: 1;
+}
+.fade-in-appear,
+.fade-in-enter{
+    opacity: 0;
+    transition: opacity 3.3s;
+}
+.fade-in-appear.fade-in-appear-active,
+.fade-in-enter.fade-in-enter-active{
+    opacity: 1;
+    transition: opacity 3.3s;
+}

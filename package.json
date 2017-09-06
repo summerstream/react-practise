@@ -1,24 +1,22 @@
 {
   "name": "react-practise",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.2",
+    "react-transition-group": "^2.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/summerstream/react-practise.git"
-  },
-  "keywords": [
-    "react",
-    "practise",
-    "redux"
-  ],
-  "author": "culnoty",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/summerstream/react-practise/issues"
-  },
-  "homepage": "https://github.com/summerstream/react-practise#readme"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

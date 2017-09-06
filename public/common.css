@@ -1,0 +1,223 @@
+@charset "utf-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 400 14px/1.5 Arial, "Lucida Grande", Verdana, "Microsoft YaHei", hei
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 2;
+    background: orange;
+    color: white;
+    font-size: 0.875rem;
+    border-radius: 2px;
+}
+
+.btn:active {
+    filter: brightness(0.9);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+iframe {
+    display: block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+    font-style: normal;
+    font-weight: 400
+}
+
+dfn {
+    font-family: Arial
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    transition: color .2s linear
+}
+
+fieldset,
+img,
+button,
+input {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+body {
+    min-width: 320px;
+    background: #f5f5f5;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:focus {
+    outline: 0
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clear {
+    clear: both
+}
+
+.overflow {
+    overflow: hidden
+}
+
+.ellips {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+html,
+body {
+    height: 100%
+}
+
+button {
+    text-align: center
+}
+
+h1 {
+    font: 600 1.286em/2 Tahoma
+}
+
+h2 {
+    font: 600 1.143em/2 Tahoma
+}
+
+h3 {
+    font: 600 1em/1.5 Tahoma
+}
+
+.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
