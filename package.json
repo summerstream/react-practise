@@ -1,0 +1,24 @@
+{
+  "name": "react-practise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summerstream/react-practise.git"
+  },
+  "keywords": [
+    "react",
+    "practise",
+    "redux"
+  ],
+  "author": "culnoty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/summerstream/react-practise/issues"
+  },
+  "homepage": "https://github.com/summerstream/react-practise#readme"
+}
