@@ -1,0 +1,19 @@
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: calc(100% - 1rem);
+    margin: auto;
+    margin-top: 2rem;
+}
+.search-bar input{
+    flex: 9;
+    padding-left: 1rem;
+}
+.icon.search{
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    color: #4285f4;
+    fill: currentColor;
+}
