@@ -6,7 +6,7 @@ class SearchGeek extends Component{
     render(){
         return (
             <div>
-                <SearchBar />
+                <SearchBar onSearch={(v)=>console.info(`on search:${v}`)} />
                 <SearchResults />
             </div>
         )
