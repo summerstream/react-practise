@@ -1,14 +1,23 @@
-import React from 'react'
+import React,{Component} from 'react'
 
-const SearchResults = ({list=[]})=>(
-    <div>
-        {
-            list.map((v)=>(
-                <Result title={v.title} summary={v.summary} url={v.url} />
-            ))
-        }
-    </div>
-)
+class SearchResults extends Component{
+    componentWillReceiveProps(nextProps, nextContext){
+        console.info(nextProps)
+    }
+    
+    render(){
+        var list = this.props.list;
+        return (
+            <div>
+            {
+                list.map((v)=>(
+                    <Result title={v.title} summary={v.summary} url={v.url} />
+                ))
+            }
+        </div>)
+    }
+
+}
 
 const Result=({title,summary,url})=>(
     <div>
