@@ -1,5 +1,10 @@
-export default (state=[],action)=>{
-    switch(action.type){
+import {combineReducers} from 'redux'
+import {
+    SEARCH
+} from '../actions/geek-search.js'
+
+const search = (state=[],action)=>{
+    switch(SEARCH){
         case 'SEARCH':{
             return [...state,{
                 title:'React的新引擎—React Fiber是什么？',
@@ -10,3 +15,9 @@ export default (state=[],action)=>{
         default:return state
     }
 }
+
+const reducers = combineReducers({
+    list:search
+})
+
+export default reducers

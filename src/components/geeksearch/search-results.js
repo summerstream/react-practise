@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-
+import styles from './styles.css'
 class SearchResults extends Component{
     componentWillReceiveProps(nextProps, nextContext){
         console.info(nextProps)
@@ -8,7 +8,7 @@ class SearchResults extends Component{
     render(){
         var list = this.props.list;
         return (
-            <div>
+            <div className="search-results">
             {
                 list.map((v)=>(
                     <Result title={v.title} summary={v.summary} url={v.url} />

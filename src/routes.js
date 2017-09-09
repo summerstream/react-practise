@@ -8,7 +8,7 @@ import {
 import Picker from './components/picker/index'
 import IndexPage from './pages/index/index'
 import pickers from './pages/pickers/index'
-import SearchGeek from './containers/search-geek'
+import SearchGeek from './components/geeksearch/geek-search'
 
 class Routes extends React.Component{
     render(){
