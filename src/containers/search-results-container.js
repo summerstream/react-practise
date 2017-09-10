@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const SearchResultsContainer = connect(
     mapStateToProps,
-    ()=>{}
+    ()=>({})
 )(SearchResults)
 
 export default SearchResultsContainer

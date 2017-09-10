@@ -2,9 +2,7 @@ import {connect} from 'react-redux'
 import SearchBar from '../components/geeksearch/search-bar'
 import {search} from '../actions/geek-search'
 
-const mapStateToProps = (state, ownProps) => {
-
-}
+const mapStateToProps = (state, ownProps) => ({})
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
