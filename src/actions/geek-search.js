@@ -27,12 +27,10 @@ function fetchSearchResults(keywords,dispatch){
         headers:headers,
         cache:'default'
     }).then((response)=>{
-        console.info(response)
         return response.json();
     },(reason)=>{
         console.warn(reason);
     }).then((json)=>{
-        console.info(json);
         var list = json.data.children.map((v)=>{
             return {
                 title:v.data.title,
