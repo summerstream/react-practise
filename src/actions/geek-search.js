@@ -35,9 +35,9 @@ function fetchSearchResults(keywords,dispatch){
         console.info(json);
         var list = json.data.children.map((v)=>{
             return {
-                title:v.kind,
-                summary:v.kind,
-                url:v.kind
+                title:v.data.title,
+                summary:v.data.public_description,
+                url:v.data.url
             }
         });
         dispatch(receiveSearchResults(list));
