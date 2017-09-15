@@ -14,6 +14,7 @@ class Home extends Page{
         return (
             <div>
                 <div onClick={this.search}>search</div>
+                <div onClick={()=>{History.forward('pickers')}}>pickers</div>
             </div>)
     }
 }

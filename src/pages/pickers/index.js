@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import Page from '../../components/page/index'
 import PickerCore from '../../components/picker-core/index'
 import Picker from '../../components/picker/index'
 import DatePicker from '../../components/date-picker/index'
@@ -6,7 +7,7 @@ import Button from '../../components/button/index'
 import DatePickerCore from '../../components/date-picker/core'
 import DatePickerCustom from '../../components/date-picker/custom'
 
-class pickers extends Component{
+class Pickers extends Page{
     constructor(props){
         super(props);
         this.onConfirmDate = this.onConfirmDate.bind(this);
@@ -55,4 +56,4 @@ class pickers extends Component{
     }
 }
 
-export default pickers
+export default Pickers
