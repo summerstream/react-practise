@@ -8,7 +8,7 @@ class Home extends Page{
         super(props)
     }
     search = ()=>{
-        History.forward('search');
+        History.forward('search',{msg:'haha'});
     }
     render(){
         return (

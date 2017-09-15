@@ -31,13 +31,15 @@ class Router extends Component{
         window[FORWARD] = function(path,data){
             var page = this.getPage(path);
             this.setState({
-                page:page
+                page:page,
+                data
             })
         }.bind(this);
         window[BACK] = (path,data)=>{
             var page = this.getPage(path);
             this.setState({
-                page:page
+                page:page,
+                data
             })
         }
     }
@@ -45,7 +47,7 @@ class Router extends Component{
         let Page = pages[this.state.page].action;
         return (
             <div>
-                <Page data={{a:1}} />
+                <Page data={this.state.data} />
             </div>
         )
     }

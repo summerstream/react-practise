@@ -13,6 +13,7 @@ class Search extends Page{
             <div>
                 <div onClick={()=>{History.back()}}>back</div>
                 <div onClick={()=>{History.back('home')}}>backToHome</div>
+                <p>{JSON.stringify(this.props.data)}</p>
                 <GeekSearch />
             </div>)
     }
