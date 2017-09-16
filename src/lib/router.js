@@ -10,19 +10,19 @@ class Router extends Component{
             page:page
         }
 
-        window.onpopstate = function(e){
+        window.onpopstate = (e)=>{
             e.preventDefault();
             var page = this.getPage();
             this.setState({page});
-        }.bind(this);
+        }
 
-        window[FORWARD] = function(path,data){
+        window[FORWARD] = (path,data)=>{
             var page = this.getPage(path);
             this.setState({
                 page:page,
                 data
             })
-        }.bind(this);
+        }
         
         window[BACK] = (path,data)=>{
             var page = this.getPage(path);
