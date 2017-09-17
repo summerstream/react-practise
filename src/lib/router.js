@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import PropTypes from 'prop-types'
 import RouteTable from '../route-table'
 import {FORWARD,BACK} from '../lib/symbol'
 
@@ -32,6 +33,11 @@ class Router extends Component{
             })
         }
     }
+    getChildContext(){
+        return {
+            pageID:'8888'
+        }
+    }
     render(){
         let Page = RouteTable[this.state.page].action;
         return (
@@ -56,4 +62,7 @@ class Router extends Component{
     }
 }
 
+Router.childContextTypes = {
+    pageID:PropTypes.string
+}
 export default Router
