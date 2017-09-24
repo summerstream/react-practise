@@ -58,6 +58,9 @@ class Router extends Component{
                 break;
             }
         }
+        if(!page){
+            page = 'home'
+        }
         return page;
     }
 }
